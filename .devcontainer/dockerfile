@@ -12,8 +12,10 @@ FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:0-${VARIANT}
 # RUN su node -c "umask 0002 && ./usr/local/share/nvm/nvm.sh && nvm install ${EXTRA_NODE_VERSION}"
 
 # [Optional] Uncomment if you want to install more global node modules
-RUN su node -c "npm install -g typescript --save"
-RUN su node -c "npm install -g aws-cdk-lib --save"
-RUN su node -c "npm install -g aws-cdk --save"
-RUN su node -c "npm update -g -s"
+RUN su node -c "npm install -g typescript"
+RUN su node -c "npm install -g aws-sdk"
+RUN su node -c "npm install -g aws-cdk-lib"
+RUN su node -c "npm install -g aws-cdk"
+# RUN su node -c ""
+# RUN su node -c "npm update -g"
 
