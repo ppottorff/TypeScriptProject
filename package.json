@@ -9,7 +9,7 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.25.0",
+    "aws-cdk-lib": "^2.80.0",
     "constructs": "^10.0.0",
     "aws-cdk": "^2.25.0",
     "express": "^4.16.1"
